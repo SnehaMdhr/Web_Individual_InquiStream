@@ -204,3 +204,60 @@ input[type="password"]:focus {
     flex-direction: column;
 }
 
+/* .Logout {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    /* align-items: center; /* Center content vertically */
+   /* width: 100px; /* Set container width */
+    /*padding: 10px; /* Optional: Add spacing */
+    /*margin-left: 1300px; /* Position the container */
+/*} */
+/* 
+.Logout a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;   
+}
+
+.Logout button {
+    background-color: #cdcdcd; /* Button background color */
+   /* color: black; /* Button text color */
+    /*border: none;
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 16px;
+    width: 50%; /* Set the width of the button */
+    /*cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for both bg and text color */
+/*}*/
+
+/* Button hover effect */
+/* .Logout button:hover {
+    background-color: #8e8b8b; /* Change background color */
+ /*   color: white; /* Change text color to white */
+/*} */
+
+.Logout {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 100%; /* Make sure the container takes full width */
+}
+
+.Logout button {
+    background-color: #cdcdcd; /* Button background color */
+    color: black; /* Button text color */
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 16px;
+    width: 50%; /* Set the width of the button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.Logout button:hover {
+    background-color: #8e8b8b; 
+    color: white;
+}
