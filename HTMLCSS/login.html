@@ -3,30 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forget Password</title>
+    <title>Login</title>
     <link rel = "stylesheet" href ="style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
     <div class="background">
             <div class="login">
+                <h3>Login</h3>
                 <label for="email">Email:</label>
-                <input type="email" id="email" required>
+                <input type="email" id="email" required >
+               
 
                 <label for="password">Password:</label>
                 <input type="password" id="password">
 
-                <label for="rpassword">Retype Password:</label>
-                <input type="password" id="password">
-
-               
+                <div class="remeberme">
+                    <label>
+                    <input type="checkbox" id="remember">Remember Me
+                    </label>
+                    <a href="forgetpassword.html">Forget Password?</a>
+                </div>
 
                 <div class="LoginBtn">
                     <button type="button" onclick="window.location.href='dashboard.html';">
-                        Reset Password
+                        Login
                     </button>
                 </div>
             </form>
-        </div>
+    </div>
 </body>
 </html>

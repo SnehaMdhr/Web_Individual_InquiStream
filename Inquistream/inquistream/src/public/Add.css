@@ -1,0 +1,361 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  background-image: url("../assets/image/background.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 100px);
+  width: 220px;
+  padding: 20px 0;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 100px;
+  left: 0;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 10px;
+  margin: 10px;
+  width: 100%;
+}
+
+.navbar li {
+  margin: 20px 0;
+  height: 100px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  text-align: left;
+}
+
+.navbar ul li a i {
+  margin-right: 35px;
+}
+
+.navbar a:hover {
+  background-color: #8e8b8b;
+  color: #fff;
+}
+
+/* Main container */
+.container {
+  background: linear-gradient(to bottom right, #d3d3d3, #f5f5f5);
+  margin-left: 220px;
+  margin-top: 100px;
+  min-height: calc(100vh - 100px);
+  width: calc(100% - 220px);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  height: 100px;
+  width: 100%;
+  background-image: url("../assets/image/background.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 0 20px;
+}
+
+.logo {
+  width: 120px;
+  height: 90px;
+}
+
+.Logout {
+  display: flex;
+  align-items: center;
+}
+
+.Logout button {
+  background-color: #cdcdcd;
+  color: black;
+  border: none;
+  padding: 12px;
+  margin-right: 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.Logout button:hover {
+  background-color: #8e8b8b;
+  color: white;
+}
+
+.Logout button i {
+  margin-right: 12px;
+}
+h1 {
+  font-family: 'Arial', sans-serif; /* Clean and modern font */
+  font-size: 2.5rem; /* Large and attention-grabbing size */
+  color: #000; /* Set text color to black */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  text-align: center; /* Center the heading */
+  margin: 20px 0; /* Add spacing around */
+  padding: 10px; /* Space around the text */
+  border-bottom: 2px solid #000; /* Underline effect in black */
+  letter-spacing: 1px; /* Slight spacing for readability */
+  animation: fadeIn 1.5s ease-in-out; /* Smooth fade-in effect */
+}
+
+.form-container {
+  width: 850px; /* Fixed width for the form */
+  margin: 50px auto; /* Center the form horizontally */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9; /* Light background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Form Label Styles */
+.form-container label {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+/* Input Field Styles */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="date"],
+.form-container input[type="number"] {
+  width: 800px; /* Full width */
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.form-container .gender-group, .marital-group{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-container .gender-group label, .marital-group label{
+  margin-right: 15px; /* Spacing between options */
+  font-weight: normal; /* Optional: lighter font for radio labels */
+}
+
+.form-container .gender-group input[type="radio"], .form-container .marital-group input[type="radio"] {
+  margin-right: 5px;
+}
+/* Table */
+.Academics table,
+.scores-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.Academics th,
+.scores-table th {
+  background-color: #ddd;
+}
+
+.Academics th,
+.Academics td,
+.scores-table th,
+.scores-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.Academics input,
+.scores-table input {
+  width: 90%;
+  max-width: 120px;
+  padding: 5px;
+}
+/* Checkbox Group */
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Reduced spacing between checkboxes */
+  margin-bottom: 15px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  color: #333;
+  cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 14px; /* Smaller checkbox */
+  height: 14px;
+  margin-right: 6px; /* Space between checkbox and label text */
+  cursor: pointer;
+}
+/* Confirmation Checkbox */
+.InqConfirmation {
+  display: flex;
+  align-items: center; /* Aligns checkbox and text */
+  gap: 5px; /* Adjust space between checkbox and text */
+  margin-top: 10px;
+  font-size: 14px;
+  white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.InqConfirmation input[type="checkbox"] {
+  width: 14px; /* Smaller checkbox */
+  height: 14px;
+  cursor: pointer;
+  margin: 0; /* Removes default margin */
+  vertical-align: middle; /* Aligns checkbox with text */
+}
+
+.InqConfirmation label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+
+/* Submit Button */
+.InqSubmit {
+  text-align: center;
+}
+
+.InqSubmit button {
+  background-color: #cdcdcd;
+  color: black;
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  font-size: 16px;
+  width: 20%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.InqSubmit button:hover {
+  background-color: #8e8b8b;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .navbar {
+    width: 180px;
+  }
+  .container {
+    margin-left: 180px;
+    width: calc(100% - 180px);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    width: 160px;
+    margin-top: 0px;
+    
+  }
+  .navbar li {
+    margin: 20px 0;
+    height: 80px;
+  }
+  .container {
+    margin-top: 0px;
+    margin-left: 160px;
+    width: calc(100% - 160px);
+  }
+  .header {
+    font-size: 20px;
+    height: 80px;
+  }
+  .logo {
+    width: 100px;
+    height: 70px;
+  }
+  .Logout button {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .form-container {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    font-size: 18px;
+}
+
+.navbar {
+  width: 180px;
+}
+
+.container {
+  margin-left: 180px;
+  width: calc(100% - 180px);
+  position: relative;
+}
+  .logo {
+    width: 80px;
+    height: 60px;
+  }
+  .Logout {
+    width: 100%;
+    justify-content: right;
+  }
+  .Logout button {
+    width: auto;
+    font-size: 14px;
+  }
+  .form-container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+  .Academics th,
+  .Academics td,
+  .scores-table th,
+  .scores-table td {
+    font-size: 12px;
+    padding: 5px;
+  }
+}

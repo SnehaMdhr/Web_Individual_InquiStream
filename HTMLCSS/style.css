@@ -1,0 +1,691 @@
+/* Background style for the page */
+.background {
+    background: linear-gradient(to bottom right, #d3d3d3, #f5f5f5); /* Gradient background */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login form container */
+.login {
+    background: url("background.jpg"); /* Sand-like background image */
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.login h3 {
+    font-family: Arial, sans-serif; /* Use a clean font */
+    font-size: 24px; /* Slightly larger font size for emphasis */
+    font-weight: bold; /* Make it stand out */
+    color: #333; /* Neutral dark color for text */
+    text-align: center; /* Center-align the text */
+    margin-bottom: 20px; /* Add spacing below the heading */
+    letter-spacing: 1px; /* Slight spacing for a modern look */
+    text-transform: uppercase; /* Optional: Transform to uppercase */
+}
+
+/* Label styling */
+.login label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Input fields */
+.login input[type="email"],
+.login input[type="password"] {
+    width: 80%; /* Full width inside wrapper */
+    height: 20px;
+    border: 1px solid #ccc;
+    padding: 10px 40px 10px 20px;
+    border-radius: 25px;
+    background-color: rgba(198, 198, 230, 0.5); /* Light blue background */
+    font-size: 16px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+}
+
+/* Focus effect on input fields */
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+    border-color: #bbcee3; /* Blue border on focus */
+    outline: none;
+}
+
+/* Password field wrapper */
+.password-wrapper {
+    position: relative;
+}
+
+/* Toggle password visibility icon */
+.login .password-wrapper .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+}
+
+/* Remember me checkbox and 'Forget password' link */
+.login .remeberme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.login .remeberme a {
+    font-size: 15px;
+    color: #72adec;
+    text-decoration: none;
+}
+
+.login .remeberme a:hover {
+    text-decoration: underline;
+}
+
+/* Login button */
+.LoginBtn {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 100%; /* Make sure the container takes full width */
+}
+
+.LoginBtn button {
+    background-color: #cdcdcd; /* Button background color */
+    color: black; /* Button text color */
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 16px;
+    width: 50%; /* Set the width of the button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.LoginBtn button:hover {
+    background-color: #8e8b8b; 
+    color: white;
+}
+
+/* Header styling */
+
+
+/* Navbar styling */
+
+.navbar {
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 100px); /* Ensure navbar is at least the full height minus header */
+    width: 220px;
+    padding: 20px 0;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    position: fixed; /* Keep the navbar fixed on the left */
+    top: 100px; /* Start below the fixed header */
+    left: 0;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+/* Navbar list */
+.navbar ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 10 px;
+    width: 100%;
+}
+
+/* Navbar list items */
+.navbar li {
+    padding: 0px;
+    margin: 20px 0;
+    height: 100px;
+}
+
+/* Navbar links */
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    text-align: left;
+    align-items: center;
+}
+.navbar ul li a i {
+    margin-right: 35px; /* Adds space between the icon and the text */
+}
+
+.navbar a:hover {
+    background-color: #8e8b8b;
+    color: #fff;
+}
+
+/* Main container styling */
+.container {
+    background: linear-gradient(to bottom right, #d3d3d3, #f5f5f5);
+    margin-left: 210px; /* Offset to account for the fixed navbar width */
+    margin-top: 100px; /* Offset to account for the fixed header height */
+    min-height: calc(100vh - 100px); /* Ensure the container matches the navbar's minimum height */
+    width: calc(100% - 210px); /* Fill remaining space to the right of the navbar */
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 100px;
+    width: 100%;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed; /* Keep the header fixed at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.logo{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 230px; /* Make sure the container takes full width */
+    height: 130px;
+} 
+
+
+.Logout {
+    display: flex;
+    justify-content: end; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 600px; /* Make sure the container takes full width */
+}
+
+.Logout button {
+    background-color: #cdcdcd; /* Button background color */
+    color: black; /* Button text color */
+    border: none;
+    padding: 12px;
+    margin-right: 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    width: 20%; /* Set the width of the button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
+}
+
+/* Button hover effect */
+.Logout button:hover {
+    background-color: #8e8b8b;
+    color: white;
+}
+
+.Logout button i {
+    margin-right: 12px;
+    margin-left: 8px;
+}
+h1 {
+    font-family: 'Arial', sans-serif; /* Clean and modern font */
+    font-size: 2.5rem; /* Large and attention-grabbing size */
+    color: #000; /* Set text color to black */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    text-align: center; /* Center the heading */
+    margin: 20px 0; /* Add spacing around */
+    padding: 10px; /* Space around the text */
+    border-bottom: 2px solid #000; /* Underline effect in black */
+    letter-spacing: 1px; /* Slight spacing for readability */
+    animation: fadeIn 1.5s ease-in-out; /* Smooth fade-in effect */
+  }
+
+ /* General Form Styles */
+.form-container {
+    width: 850px; /* Fixed width for the form */
+    margin: 50px auto; /* Center the form horizontally */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9; /* Light background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Form Label Styles */
+  .form-container label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #333;
+  }
+  
+  /* Input Field Styles */
+  .form-container input[type="text"],
+  .form-container input[type="email"],
+  .form-container input[type="date"],
+  .form-container input[type="number"] {
+    width: 800px; /* Full width */
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  .Academics table, .scores-table table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.Academics th, .Academics td, .scores-table th, .scores-table td{
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+
+.Academics td, .scores-table td{
+    background-color: #f9f9f9; /* Light background for table cells */
+}
+
+.Academics input[type="text"], .scores-table input[type="text"]{
+    width: 90%; /* Use relative width to fit within the table cells */
+    max-width: 120px; /* Restrict maximum size */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+  /* Gender Radio Buttons */
+  .form-container .gender-group, .form-container .marital-group{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .form-container .gender-group label, .form-container .marital-group label {
+    margin-right: 15px; /* Spacing between options */
+    font-weight: normal; /* Optional: lighter font for radio labels */
+  }
+  
+  .form-container .gender-group input[type="radio"],.form-container .marital-group input[type="radio"] {
+    margin-right: 5px;
+  }
+  .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Spacing between checkboxes */
+    margin-bottom: 20px;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    color: #333;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px; /* Space between checkbox and label text */
+} 
+
+
+  /* Submit Button Styles */
+  .InqSubmit {
+    text-align: center; /* Center the button */
+    margin-top: 20px;
+  }
+  
+  .InqSubmit button {
+    background-color: #cdcdcd; /* Button background color */
+    color: black; /* Button text color */
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 16px;
+    width: 20%; /* Set the width of the button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  .InqSubmit button:hover {
+    background-color: #8e8b8b;
+    color: white;
+  }
+
+  /* Add Button Styling */
+/* Add Button Styling */
+.addBtn {
+    text-align: right; /* Aligns the button to the right */
+    margin-top: -10px; /* Moves it closer to the <h1> */
+  }
+  
+  .addBtn button {
+    background-color: #cdcdcd; /* Button background color */
+    color: black; /* Button text color */
+    border: none;
+    padding: 12px;
+    margin-right: 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    width: 150px; /* Set the width of the button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.addBtn button:hover {
+    background-color: #8e8b8b; 
+    color: white;
+}
+
+.container .addBtn i{
+    margin-right: 12px;
+    margin-left: 8px;
+}
+
+
+ /* General Form Styles */
+ .staff-container {
+    width: 850px; /* Fixed width for the form */
+    margin: 50px auto; /* Center the form horizontally */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9; /* Light background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Form Label Styles */
+  .staff-container label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #333;
+  }
+  
+  /* Input Field Styles */
+  .staff-container input[type="text"],
+  .staff-container input[type="email"],
+  .staff-container input[type="date"],
+  .staff-container input[type="number"] {
+    width: 800px; /* Full width */
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  /* Gender Radio Buttons */
+  .staff-container .gender-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .staff-container .gender-group label {
+    margin-right: 15px; /* Spacing between options */
+    font-weight: normal; /* Optional: lighter font for radio labels */
+  }
+  
+  .staff-container .gender-group input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+
+  .staff-container .select {
+    width: 300px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.staff-container .select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+
+
+.staff-container .age-group {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    gap: 20px; /* Adds spacing between items */
+    margin-bottom: 15px; /* Spacing below the group */
+}
+
+.staff-container .age-group label {
+    margin-right: 10px; /* Spacing between the label and the input */
+    white-space: nowrap; /* Prevents labels from wrapping to a new line */
+}
+
+.staff-container .age-group input[type="date"],
+.staff-container .age-group input[type="number"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Adjust the font size for better readability */
+    line-height: 1.5; /* Ensures text is centered vertically */
+    vertical-align: middle; /* Ensures vertical alignment of the text */
+}
+
+
+
+.staff-container .StaffSubmit {
+    text-align: center; /* Center the button */
+    margin-top: 20px;
+  }
+  
+  .staff-container .StaffSubmit button {
+    background-color: #cdcdcd; /* Button background color */
+    color: black; /* Button text color */
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 16px;
+    width: 20%; /* Set the width of the button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .staff-container .StaffSubmit button:hover {
+    background-color: #8e8b8b; 
+    color: white;
+}
+  .RemForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.cont {
+    background: url("background.jpg"); /* Sand-like background image */
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    width: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.RemForm input[type="text"] {
+    width: 400px; /* Set width to 400px */
+    height: 200px; /* Set height to 200px */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width and height */
+    background-color: #f0f0f0; /* Light gray background color */
+}
+
+  
+  .cont .AddRem {
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers the button horizontally */
+    align-items: center; /* Centers the button vertically */
+    height: 100%; /* Ensures the container has enough height for vertical centering */
+}
+
+.cont .AddRem button {
+    background-color: #cdcdcd; /* Button background color */
+    color: black; /* Button text color */
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 16px;
+    width: 230px; /* Set the width of the button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* Ensures text stays in one line */
+    display: block; /* Makes the button a block element */
+    margin-left: 100px; /* Centers the button horizontally (if needed) */
+}
+
+.cont .AddRem button:hover {
+    background-color: #8e8b8b; 
+    color: white;
+}
+
+.Ucont {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center the elements horizontally */
+    gap: 20px; /* Space between the buttons */
+    background: url("background.jpg"); /* Sand-like background image */
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    width: 450px;
+    justify-content: center;
+}
+
+.Ucont .TopButton {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    width: 100%; /* Ensures full width for centering */
+}
+
+.Ucont .UAddRem button{
+    background-color: #cdcdcd; /* Button background color */
+    color: black; /* Button text color */
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 16px;
+    width: 230px; /* Set the width of the button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* Ensures text stays in one line */
+    display: inline-block; /* Make the buttons inline for the same line */
+    margin: 10px; /* Adds space between the two buttons */
+}
+
+.Ucont .UAddRem button:hover{
+    background-color: #8e8b8b;
+    color: white;
+}
+
+
+.Ucont .UviewRem button, .Ucont .UEnroll button {
+    background-color: #cdcdcd; /* Button background color */
+    color: black; /* Button text color */
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 16px;
+    width: 230px; /* Set the width of the button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* Ensures text stays in one line */
+    display: inline-block; /* Make the buttons inline for the same line */
+    margin: 10px; /* Adds space between the two buttons */
+}
+
+.Ucont .UviewRem button:hover, .Ucont .UEnroll button:hover {
+    background-color: #8e8b8b;
+    color: white;
+}
+
+.Ucont .BottomButtons {
+    display: flex;
+    justify-content: center; /* Align buttons horizontally */
+    gap: 20px; /* Space between the two buttons */
+}
+
+.box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.box p {
+    color: #7f8c8d;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.box ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.box ul li {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+/* Hover effect for boxes */
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}

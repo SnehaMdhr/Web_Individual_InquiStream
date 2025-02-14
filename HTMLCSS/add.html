@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href ="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="dashboard.html"><img class="logo" src="LOGO.png" alt="logo"></a>
+        </div>
+        <div class="Logout">
+            <button onclick="window.location.href='login.html';"><i class="fa-solid fa-right-from-bracket"></i>Logout</button>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="dashboard.html"><i class="fa-solid fa-house"></i>     Home</a></li>
+            <li><a href="add.html"><i class="fa-solid fa-user-plus"></i>Add Inquiry</a></li>
+            <li><a href="list.html"><i class="fa-solid fa-list"></i>Inquiry List</a></li>
+            <li><a href="enroll.html"><i class="fa-solid fa-users"></i>Enrolled</a></li>
+            <li><a href="staff.html"><i class="fa-solid fa-user-tie"></i>Staff</a></li>
+        </ul>
+    </div>
+        <div class="container">
+            <h1>Inquiry Form</h1>
+            <div class="form-container">
+            <form>
+                <h2>Personal Details</h2>
+                <label for="InqName">Name:</label>
+                <input type="text" id="InqName">
+
+                <label for="InqEmail">Email:</label>
+                <input type="email" id="InqEmail" >
+
+                <label for="InqDob">Date of Birth:</label>
+                <input type="date" id="InqDob" >
+
+                <label for="Inqage">Age:</label>
+                <input type="number" id="Inqage" max="100" min="14" >
+                <label for="InqPaddress">Permanent Address:</label>
+                <input type="text" id="InqPaddress">
+                <label for="InqTAddress">Temporary Address:</label>
+                <input type="text" id="InqTAddress">
+                <label for="InqGender">Gender:</label>
+                <div class="gender-group">
+                    <label for="InqMale">
+                      <input type="radio" id="InqMale" name="gender" value="Male"> Male
+                    </label>
+                    <label for="InqFemale">
+                      <input type="radio" id="InqFemale" name="gender" value="Female"> Female
+                    </label>
+                    <label for="InqOthers">
+                      <input type="radio" id="InqOthers" name="gender" value="Others"> Others
+                    </label>
+
+
+                   
+                  </div>
+                  <label for="InqMarital">Marital Status:</label>
+                  <div class="marital-group">
+                    <label for="InqMarried">
+                      <input type="radio" id="InqMarried" name="Marital" value="Married"> Married
+                    </label>
+                    <label for="InqFemale">
+                      <input type="radio" id="InqUnMarried" name="Marital" value="UnMarried"> Unmarried
+                    </label>
+                    
+                  </div>
+                  <h2>Academic Qualification:</h2>
+
+                  <table class="Academics">
+                    <thead>
+                        <tr>
+                            <th>Degree Obtained</th>
+                            <th>Major</th>
+                            <th>Institution</th>
+                            <th>Score/GPA</th>
+                            <th>Passed Year</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SLC / SEE</td>
+                            <td><input type="text" id="major_slc"></td>
+                            <td><input type="text" id="institution_slc"></td>
+                            <td><input type="text" id="score_slc"></td>
+                            <td><input type="text" id="year_slc"></td>
+                        </tr>
+                        <tr>
+                            <td>10+2/CTEVT/PCL</td>
+                            <td><input type="text" id="major_plus2" ></td>
+                            <td><input type="text" id="institution_plus2"></td>
+                            <td><input type="text" id="score_plus2" ></td>
+                            <td><input type="text" id="year_plus2"></td>
+                        </tr>
+                        <tr>
+                            <td>Bachelor</td>
+                            <td><input type="text" id="major_bachelor"></td>
+                            <td><input type="text" id="institution_bachelor" ></td>
+                            <td><input type="text" id="score_bachelor"></td>
+                            <td><input type="text" id="year_bachelor" ></td>
+                        </tr>
+                        <tr>
+                            <td>Master</td>
+                            <td><input type="text" id="major_master"></td>
+                            <td><input type="text" id="institution_master" ></td>
+                            <td><input type="text" id="score_master"></td>
+                            <td><input type="text" id="year_master" ></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>Work Experience If Any?</h2>
+                <input type="text" id="Inqworkexp" >
+
+                <h2>Country of your interest: </h2>
+                <div class="checkbox-group">
+                    <label for="country_aus">
+                        <input type="checkbox" id="country_aus" name="countries" value="Australia"> Australia
+                    </label>
+                    <label for="country_canada">
+                        <input type="checkbox" id="country_canada" name="countries" value="Canada"> Canada
+                    </label>
+                    <label for="country_uk">
+                        <input type="checkbox" id="country_uk" name="countries" value="United Kingdom"> United Kingdom
+                    </label>
+                    <label for="country_usa">
+                        <input type="checkbox" id="country_usa" name="countries" value="United States"> United States
+                    </label>
+                    <label for="country_ireland">
+                        <input type="checkbox" id="country_ireland" name="countries" value="Ireland"> Ireland
+                    </label>
+                       
+                    
+                </div>
+                <label for="country_Others">
+                     Others
+                  </label>
+
+
+                  
+                  <input type="text" id="InqCouOthers">
+                  <h2>Have you taken any of the following tests?</h2>
+<div class="ielts-section">
+    <div class="checkbox-group">
+        <label>
+            <input type="checkbox" id="pte" name="tests" value="PTE"> PTE
+        </label>
+        <label>
+            <input type="checkbox" id="ielts" name="tests" value="IELTS"> IELTS
+        </label>
+        <label>
+            <input type="checkbox" id="toefl" name="tests" value="TOEFL"> TOEFL
+        </label>
+        <label>
+            <input type="checkbox" id="testother" name="tests" value="Other"> Other
+        </label>
+    </div>
+    <div class="scores-table">
+      <h2>Score</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Listening</th>
+                        <th>Writing</th>
+                        <th>Reading</th>
+                        <th>Speaking</th>
+                        <th>Overall</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" id="listening" placeholder="Listening"></td>
+                        <td><input type="text" id="writing" placeholder="Writing"></td>
+                        <td><input type="text" id="reading" placeholder="Reading"></td>
+                        <td><input type="text" id="speaking" placeholder="Speaking"></td>
+                        <td><input type="text" id="overall" placeholder="Overall"></td>
+                    </tr>
+                </tbody>
+             </table>
+             </div>
+            </div>
+
+            <div class="reference">
+                <label for="Inqref">How did you know about us?</label>
+                <input type="text" id="Inqref"  >
+            </div>
+                <label for="InqConfirmation">
+                    <input type="checkbox" id="InqConfirmation">
+                    I have provided accurate information.</label>
+
+                   <div class="InqSubmit"> <button type="button" onclick="window.location.href='list.html';">Submit</button></div>
+            </form>
+        </div>
+        </div>
+
+
+</body>
+</html>

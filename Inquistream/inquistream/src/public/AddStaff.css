@@ -1,0 +1,306 @@
+*{
+    margin: 0px;
+}
+/* Background style for the page */
+.background {
+    background: linear-gradient(to bottom right, #d3d3d3, #f5f5f5); /* Gradient background */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar {
+    background-image: url("../assets/image/background.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 100px); /* Ensure navbar is at least the full height minus header */
+    width: 220px;
+    padding: 20px 0;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    position: fixed; /* Keep the navbar fixed on the left */
+    top: 100px; /* Start below the fixed header */
+    left: 0;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+/* Navbar list */
+.navbar ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 10 px;
+    width: 100%;
+}
+
+/* Navbar list items */
+.navbar li {
+    padding: 0px;
+    margin: 20px 0;
+    height: 100px;
+}
+
+/* Navbar links */
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    text-align: left;
+    align-items: center;
+}
+.navbar ul li a i {
+    margin-right: 35px; /* Adds space between the icon and the text */
+}
+
+.navbar a:hover {
+    background-color: #8e8b8b;
+    color: #fff;
+}
+
+/* Main container styling */
+.container {
+    background: linear-gradient(to bottom right, #d3d3d3, #f5f5f5);
+    margin-left: 210px; /* Offset to account for the fixed navbar width */
+    margin-top: 100px; /* Offset to account for the fixed header height */
+    min-height: calc(100vh - 100px); /* Ensure the container matches the navbar's minimum height */
+    width: calc(100% - 210px); /* Fill remaining space to the right of the navbar */
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 100px;
+    width: 100%;
+    background-image: url("../assets/image/background.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed; /* Keep the header fixed at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.logo{
+    margin-left: 40px;
+    width: 120px; /* Make sure the container takes full width */
+    height: 90px;
+} 
+
+
+.Logout {
+    display: flex;
+    justify-content: end; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 600px; /* Make sure the container takes full width */
+}
+
+.Logout button {
+    background-color: #cdcdcd; /* Button background color */
+    color: black; /* Button text color */
+    border: none;
+    padding: 12px;
+    margin-right: 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    width: 20%; /* Set the width of the button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
+}
+
+/* Button hover effect */
+.Logout button:hover {
+    background-color: #8e8b8b;
+    color: white;
+}
+
+.Logout button i {
+    margin-right: 12px;
+    margin-left: 8px;
+}
+h1 {
+    font-family: 'Arial', sans-serif; /* Clean and modern font */
+    font-size: 2.5rem; /* Large and attention-grabbing size */
+    color: #000; /* Set text color to black */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    text-align: center; /* Center the heading */
+    margin: 20px 0; /* Add spacing around */
+    padding: 10px; /* Space around the text */
+    border-bottom: 2px solid #000; /* Underline effect in black */
+    letter-spacing: 1px; /* Slight spacing for readability */
+    animation: fadeIn 1.5s ease-in-out; /* Smooth fade-in effect */
+  }
+
+.addBtn {
+    text-align: right; /* Aligns the button to the right */
+    margin-top: -10px; /* Moves it closer to the <h1> */
+  }
+  
+  .addBtn button {
+    background-color: #cdcdcd; /* Button background color */
+    color: black; /* Button text color */
+    border: none;
+    padding: 12px;
+    margin-right: 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    width: 150px; /* Set the width of the button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.addBtn button:hover {
+    background-color: #8e8b8b; 
+    color: white;
+}
+
+.container .addBtn i{
+    margin-right: 12px;
+    margin-left: 8px;
+}
+
+
+ /* General Form Styles */
+ .staff-container {
+    width: 850px; /* Fixed width for the form */
+    margin: 50px auto; /* Center the form horizontally */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9; /* Light background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Form Label Styles */
+  .staff-container label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #333;
+  }
+  
+  /* Input Field Styles */
+  .staff-container input[type="text"],
+  .staff-container input[type="email"],
+  .staff-container input[type="date"],
+  .staff-container input[type="number"],
+  .staff-container input[type="password"] {
+    width: 800px; /* Full width */
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+   .staff-container .gender-group{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .staff-container .gender-group label{
+    margin-right: 15px; /* Spacing between options */
+    font-weight: normal; /* Optional: lighter font for radio labels */
+  }
+  
+  .staff-container .gender-group input[type="radio"] {
+    margin-right: 5px;
+  }
+
+  .staff-container select {
+    width: 100%; /* Makes it responsive */
+    max-width: 400px; /* Limits the width */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus Effect */
+.staff-container select:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 6px rgba(0, 86, 179, 0.4);
+    outline: none;
+}
+
+/* Option Styling */
+.staff-container select option {
+    font-size: 16px;
+    background: #f9f9f9;
+    color: #333;
+}
+
+/* Disabled Option */
+.staff-container select option[disabled] {
+    color: #888;
+}
+
+
+
+.staff-container .age-group {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    gap: 20px; /* Adds spacing between items */
+    margin-bottom: 15px; /* Spacing below the group */
+}
+
+.staff-container .age-group label {
+    margin-right: 10px; /* Spacing between the label and the input */
+    white-space: nowrap; /* Prevents labels from wrapping to a new line */
+}
+
+.staff-container .age-group input[type="date"],
+.staff-container .age-group input[type="number"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Adjust the font size for better readability */
+    line-height: 1.5; /* Ensures text is centered vertically */
+    vertical-align: middle; /* Ensures vertical alignment of the text */
+}
+
+
+
+.staff-container .StaffSubmit {
+    text-align: center; /* Center the button */
+    margin-top: 20px;
+  }
+  
+  .staff-container .StaffSubmit button {
+    background-color: #cdcdcd; /* Button background color */
+    color: black; /* Button text color */
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 16px;
+    width: 20%; /* Set the width of the button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .staff-container .StaffSubmit button:hover {
+    background-color: #8e8b8b; 
+    color: white;
+}
+

@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+}
+/* Background style for the page */
+.background {
+    background: linear-gradient(to bottom right, #d3d3d3, #f5f5f5); /* Gradient background */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Ucont {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center the elements horizontally */
+    gap: 20px; /* Space between the buttons */
+    background: url("../assets/image/background.jpg"); /* Sand-like background image */
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    width: 450px;
+    justify-content: center;
+}
+
+.Ucont .TopButton {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    width: 100%; /* Ensures full width for centering */
+}
+
+.Ucont .UAddRem button{
+    background-color: #cdcdcd; /* Button background color */
+    color: black; /* Button text color */
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 16px;
+    width: 230px; /* Set the width of the button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* Ensures text stays in one line */
+    display: inline-block; /* Make the buttons inline for the same line */
+    margin: 10px; /* Adds space between the two buttons */
+}
+
+.Ucont .UAddRem button:hover{
+    background-color: #8e8b8b;
+    color: white;
+}
+
+
+.Ucont .UviewRem button, .Ucont .UEnroll button {
+    background-color: #cdcdcd; /* Button background color */
+    color: black; /* Button text color */
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 16px;
+    width: 230px; /* Set the width of the button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* Ensures text stays in one line */
+    display: inline-block; /* Make the buttons inline for the same line */
+    margin: 10px; /* Adds space between the two buttons */
+}
+
+.Ucont .UviewRem button:hover, .Ucont .UEnroll button:hover {
+    background-color: #8e8b8b;
+    color: white;
+}
+
+.Ucont .BottomButtons {
+    display: flex;
+    justify-content: center; /* Align buttons horizontally */
+    gap: 20px; /* Space between the two buttons */
+}
+
